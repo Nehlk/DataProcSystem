@@ -141,7 +141,7 @@ if(previousValue == BTN_NADA && value != BTN_NADA)
 
 
      case BTN_UP:
-            if(posicionCursor == 0 && minuto_B < 10)
+            if(posicionCursor == 0 && minuto_B < 5)
             {
               minuto_B ++;
               lcd.setCursor(posicionCursor, 0); 
@@ -149,7 +149,7 @@ if(previousValue == BTN_NADA && value != BTN_NADA)
               delay(100);
                         
             }
-            else if(posicionCursor == 1 && minuto_A < 10)
+            else if(posicionCursor == 1 && minuto_A < 9)
             {
               minuto_A++;
               lcd.setCursor(posicionCursor, 0); 
@@ -157,7 +157,7 @@ if(previousValue == BTN_NADA && value != BTN_NADA)
               delay(100);
                         
             }
-            else if(posicionCursor == 3 && segundo_B < 10)
+            else if(posicionCursor == 3 && segundo_B < 5)
             {
               segundo_B++;
               lcd.setCursor(posicionCursor, 0); 
@@ -165,7 +165,7 @@ if(previousValue == BTN_NADA && value != BTN_NADA)
               delay(100);
                         
             }
-             else if(posicionCursor == 4 && segundo_A < 10)
+             else if(posicionCursor == 4 && segundo_A < 9)
             {
               segundo_A++ ;
               lcd.setCursor(posicionCursor, 0); 
